@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>     
+    <title>Document</title>
+</head>
+<body>
+    <section class="why ">
+        <div class="wrapper">
+          <h1 class="title__h1">Reconocimiento de objetos TensorflowJS</h1>
+          <p class="copy">
+            TensorflowJS nos permite utilizar modelos pre-entrenados para resolver problemas en particular, un problema clásico es el reconocimiento de objetos.
+          </p>
+            <p class="copy">
+            En este caso empleamos el modelo ya pre-entrenado Mobilenet, al ser un modelo general no responde de la mejor manera a nuestros objetos (Resultado Modelo Mobilenet). Podemos 
+            complementar el modelo con un clasificador KNN (K-Nearest Neighbors), esto nos permite identificar objetos y categorizar según el objetivo determinado, para este ejercicio por medio de 
+            la webcam poder generar las siguientes categorias: Pared, Persona, 👍 (OK), Taza o Telefóno
+            </p>
+        <p class="copy">
+            En la medida que utilicemos más imagenes con distintos ángulos, tipos de luz y alguna variante, mejor será el resultado (Resultado Modelo Mobilenet + Algoritmo de clasficación KNN)
+            <br>
+            Finalmente poder almancenar el el modelo en LocalStorage y poder reutilizarlo en próximas ejecuciones
+          </p>
+          <div class="why__grid">
+            <div class="why__item">
+              <button class='button' id="clase-a" onclick="addExample(1)">Pared</button>
+            </div>
+            <div class="why__item">
+              <button class='button' id="clase-a" onclick="addExample(2)">Persona</button>
+            </div>
+            <div class="why__item">
+              <button class='button' id="clase-a" onclick="addExample(3)">OK</button>
+            </div>
+            <div class="why__item">
+              <button class='button' id="clase-a" onclick="addExample(4)">Taza</button>
+            </div>
+            <div class="why__item">
+                <button class='button' id="clase-a" onclick="addExample(5)">Telefono</button>
+              </div>            
+          </div>
+        </div>
+      </section>   
+
+    <h3 class='title__h3'>Resultado Modelo Mobilenet</h3>
+    <div class='div_text' id='modelo'></div>
+
+    <h3 class='title__h3'>Resultado Modelo Mobilenet + Algoritmo de clasficación KNN</h3>
+    <div class='div_text' id='modelo_knn'></div>
+
+    <h3 class='title__h3'>Webcam</h3>
+    <section class="section_gray">
+        <video class="center_video" autoplay="" playsinline muted id="webcam" ></video>
+    </section>
+    
+    <section class="why_section">
+        <div class="wrapper">
+        <div class="why__grid_section">
+            <div class="why__item_section">
+                <p class="copy_section">El almacenamiento se realiza en LocalStorage</p>
+                <button class='btn_save' id="saveKnn"  onclick="saveKnn();">Almacenar configuración</button>
+            </div>
+            <div class="why__item_section">
+                <p class="copy_section">La carga se realiza de LocalStorage</p>        
+                <button class='btn_save' id="loadKnn" onclick="loadKnn();">Recuperar configuración</button>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper">             
+          <p class="footer__copyright">
+            © Gonzalo Mardones. gonzalo-a@hotmail.com
+          </p>
+        </div>
+      </footer>
+    <script src="scripts.js?v=12"></script>
+</body>
+</html>
