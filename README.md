@@ -29,5 +29,5 @@ live-server .
 
 
 ---
-⌨️ Si te parecio interesante el ejemplo, apoya y crear más contenido. 
+⌨️ Si te parecio interesante el ejemplo, apoya para crear más contenido. 
   Con ❤️ por Gonzalo Mardones 😊
