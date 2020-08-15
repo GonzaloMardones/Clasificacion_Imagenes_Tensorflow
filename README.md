@@ -14,10 +14,10 @@ live-server .
 ```
 
 ## PDF resumen
-[Info_resumen.pdf](https://github.com/GonzaloMardones/Image_Classification_Tensorflow/blob/master/tutorial_resumen.pdf)
+[Info_resumen.pdf](https://github.com/GonzaloMardones/Clasificacion_Imagenes_Tensorflow/blob/master/tutorial_resumen.pdf)
 
 ## Video Demo
-[Ver video](https://github.com/GonzaloMardones/Image_Classification_Tensorflow/blob/master/video_3.mov)
+[Ver video](https://github.com/GonzaloMardones/Clasificacion_Imagenes_Tensorflow/blob/master/video_3.mov)
 
 ## Referencias 🎁
 
