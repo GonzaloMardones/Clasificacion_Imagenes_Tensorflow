@@ -2,7 +2,7 @@
 
 Proyecto de nivel básico-medio de desarrollo de clasificador de imágenes utilizando tensorflowJS, modelos pre-entrenados (mobilenet) y clasificador KNN.
 El objetivo es ir aprendiendo y ver el valor a esta técnologia en nuestros proyectos de mejora
-Puede ver el demo del proyecto en: 
+Puede ver el demo del proyecto en: https://gonzalomardones.github.io/Clasificacion_Imagenes_Tensorflow/
 
 ### Si no conoces 📋
 
